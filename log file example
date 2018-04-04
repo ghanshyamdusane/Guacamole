@@ -1,0 +1,1287 @@
+
+Checking CentOS version...
+...CentOS 7 found
+
+
+Starting...
+...Preparing ingredients
+
+
+Searching for EPEL Repository...
+epel-release-7-11.noarch
+No need to install EPEL repository!
+
+Searching for RPMFusion Repository...
+rpmfusion-free-release-7-1.noarch
+No need to install RPMFusion repository!
+
+Updating CentOS...
+
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.mirror.net.in
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos.excellmedia.net
+ * rpmfusion-free-updates: fr2.rpmfind.net
+ * updates: centos.excellmedia.net
+No packages marked for update
+
+Installing Dependencies...
+libjpeg-turbo-official-1.5.2-20170707.x86_64
+rpm -qa | grep libjpeg-turbo-official-1.5.2 RC is: 0
+...libjpeg-turbo-official-1.5.2 is installed on the system
+
+ffmpeg-devel-2.8.14-1.el7.x86_64
+rpm -qa | grep ffmpeg-devel RC is: 0
+...ffmpeg-devel is installed on the system
+
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.mirror.net.in
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos.excellmedia.net
+ * rpmfusion-free-updates: fr2.rpmfind.net
+ * updates: centos.excellmedia.net
+Package wget-1.14-15.el7_4.1.x86_64 already installed and latest version
+Package pv-1.4.6-1.el7.x86_64 already installed and latest version
+Package dialog-1.2-4.20130523.el7.x86_64 already installed and latest version
+Package gcc-4.8.5-16.el7_4.2.x86_64 already installed and latest version
+Package cairo-devel-1.14.8-2.el7.x86_64 already installed and latest version
+Package 2:libpng-devel-1.5.13-7.el7_2.x86_64 already installed and latest version
+Package uuid-devel-1.6.2-26.el7.x86_64 already installed and latest version
+Package ffmpeg-devel-2.8.14-1.el7.x86_64 already installed and latest version
+Package freerdp-devel-1.0.2-10.el7.x86_64 already installed and latest version
+Package freerdp-plugins-1.0.2-10.el7.x86_64 already installed and latest version
+Package pango-devel-1.40.4-1.el7.x86_64 already installed and latest version
+Package libssh2-devel-1.4.3-10.el7_2.1.x86_64 already installed and latest version
+Package libtelnet-devel-0.21-5.el7.x86_64 already installed and latest version
+Package libvncserver-devel-0.9.9-9.el7_0.1.x86_64 already installed and latest version
+Package pulseaudio-libs-devel-10.0-3.el7.x86_64 already installed and latest version
+Package 1:openssl-devel-1.0.2k-8.el7.x86_64 already installed and latest version
+Package 1:libvorbis-devel-1.3.3-8.el7.x86_64 already installed and latest version
+Package libwebp-devel-0.3.0-7.el7.x86_64 already installed and latest version
+Package tomcat-7.0.76-3.el7_4.noarch already installed and latest version
+Package gnu-free-mono-fonts-20120503-8.el7.noarch already installed and latest version
+Package 1:mariadb-5.5.56-2.el7.x86_64 already installed and latest version
+Package 1:mariadb-server-5.5.56-2.el7.x86_64 already installed and latest version
+Nothing to do
+yum install RC is: 0
+
+Creating Directories...
+
+mkdir: cannot create directory ‘/etc/guacamole’: File exists
+mkdir: created directory ‘/usr/local/src/guacamole/0.9.14’
+mkdir: created directory ‘/usr/local/src/guacamole/0.9.14/client’
+mkdir: created directory ‘/usr/local/src/guacamole/0.9.14/selinux’
+mkdir: cannot create directory ‘/usr/share/tomcat/.guacamole/’: File exists
+
+Downloading Guacamole packages for installation...
+
+
+Derompessing Guacamole Server Source...
+
+
+Decrompressing Guacamole JDBC Extension...
+
+
+Decompressing MySQL Connector...
+
+
+Compiling Gucamole Server...
+
+checking for a BSD-compatible install... /bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /bin/ld
+checking if the linker (/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /bin/nm -B
+checking the name lister (/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... yes
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking for gcc option to accept ISO C99... -std=gnu99
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking cairo/cairo.h usability... yes
+checking cairo/cairo.h presence... yes
+checking for cairo/cairo.h... yes
+checking pngstruct.h usability... no
+checking pngstruct.h presence... no
+checking for pngstruct.h... no
+checking for cos in -lm... yes
+checking for png_write_png in -lpng... yes
+checking for jpeg_start_compress in -ljpeg... yes
+checking for cairo_create in -lcairo... yes
+checking for pthread_create in -lpthread... yes
+checking for dlopen in -ldl... (cached) yes
+checking for uuid_make in -lossp-uuid... yes
+checking ossp/uuid.h usability... no
+checking ossp/uuid.h presence... no
+checking for ossp/uuid.h... no
+checking whether uuid_make is declared... yes
+checking for CU_run_test in -lcunit... no
+checking for clock_gettime... yes
+checking for gettimeofday... yes
+checking for memmove... yes
+checking for memset... yes
+checking for select... yes
+checking for strdup... yes
+checking for nanosleep... yes
+checking whether png_get_io_ptr is declared... yes
+checking whether cairo_format_stride_for_width is declared... yes
+checking whether poll is declared... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for pkg-config... /bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for AVCODEC... yes
+checking for AVUTIL... yes
+checking for SWSCALE... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking for SSL_CTX_new in -lssl... yes
+checking whether DSA_SIG_get0 is declared... no
+checking whether DSA_get0_pqg is declared... no
+checking whether DSA_get0_key is declared... no
+checking whether RSA_get0_key is declared... no
+checking whether libssl requires threading callbacks... yes
+checking for main in -lwsock32... no
+checking vorbis/vorbisenc.h usability... yes
+checking vorbis/vorbisenc.h presence... yes
+checking for vorbis/vorbisenc.h... yes
+checking for ogg_stream_init in -logg... yes
+checking for vorbis_block_init in -lvorbis... yes
+checking for vorbis_encode_init in -lvorbisenc... yes
+checking for pa_context_new in -lpulse... yes
+checking for PANGO... yes
+checking for PANGOCAIRO... yes
+checking for rfbInitClient in -lvncclient... yes
+checking for rfbClient.destHost... yes
+checking for rfbClient.destPort... yes
+checking whether listenForIncomingConnectionsNoFork is declared... yes
+checking for freerdp_new in -lfreerdp-core... yes
+checking for glyph_cache_register_callbacks in -lfreerdp-cache... yes
+checking for freerdp_channels_new in -lfreerdp-client... no
+checking for freerdp_channels_new in -lfreerdp-channels... yes
+checking for svc_plugin_init in -lfreerdp-utils... yes
+checking for freerdp_image_convert in -lfreerdp-codec... yes
+checking whether freerdp_convert_gdi_order_color is declared... no
+checking whether freerdp_color_convert_drawing_order_color_to_gdi_color is declared... no
+checking for rdpSvcPlugin.interval_ms... no
+checking freerdp/locale/keyboard.h usability... no
+checking freerdp/locale/keyboard.h presence... no
+checking for freerdp/locale/keyboard.h... no
+checking freerdp/kbd/layouts.h usability... yes
+checking freerdp/kbd/layouts.h presence... yes
+checking for freerdp/kbd/layouts.h... yes
+checking freerdp/addin.h usability... no
+checking freerdp/addin.h presence... no
+checking for freerdp/addin.h... no
+checking freerdp/client/channels.h usability... no
+checking freerdp/client/channels.h presence... no
+checking for freerdp/client/channels.h... no
+checking for freerdp/client/cliprdr.h... no
+checking for freerdp/plugins/cliprdr.h... yes
+checking for freerdp/client/disp.h... no
+checking for rdpSettings.GatewayEnabled... no
+checking for rdpSettings.LoadBalanceInfo... no
+checking whether PubSub_SubscribeChannelConnected is declared... no
+checking whether freerdp_register_addin_provider is declared... no
+checking whether freerdp_channels_global_init is declared... yes
+checking for ADDIN_ARGV... no
+checking winpr/stream.h usability... no
+checking winpr/stream.h presence... no
+checking for winpr/stream.h... no
+checking whether stream_write_uint8 is declared... yes
+checking winpr/wtypes.h usability... no
+checking winpr/wtypes.h presence... no
+checking for winpr/wtypes.h... no
+checking freerdp/types.h usability... yes
+checking freerdp/types.h presence... yes
+checking for freerdp/types.h... yes
+checking for freerdp.ContextSize... no
+checking for freerdp.context_size... yes
+checking for rdpSettings.Width... no
+checking for rdpSettings.Height... no
+checking for rdpSettings.FastPathInput... no
+checking for rdpSettings.FastPathOutput... no
+checking for rdpSettings.SendPreconnectionPdu... no
+checking for rdpSettings.OrderSupport... no
+checking for rdpSettings.width... yes
+checking for rdpSettings.height... yes
+checking for rdpSettings.order_support... yes
+checking for rdpSettings.audio_playback... yes
+checking for rdpSettings.audio_capture... yes
+checking for rdpSettings.device_redirection... no
+checking for CHANNEL_ENTRY_POINTS_FREERDP... no
+checking freerdp/version.h usability... no
+checking freerdp/version.h presence... no
+checking for freerdp/version.h... no
+checking whether rdpBitmap.Decompress() requires the codec_id... no
+checking whether IWTSVirtualChannelCallback.OnDataReceived() uses a wStream... no
+checking whether interleaved_decompress() accepts an additional palette parameter... no
+checking whether planar_decompress() can flip... no
+checking for rdpContext.codecs... no
+checking whether rdpPalette.entries is static... no
+checking for rdpPointer.SetDefault... no
+checking for rdpPointer.SetNull... no
+checking for wMessage.id... no
+checking for RDP_EVENT.event_class... yes
+checking for libssh2_session_init_ex in -lssh2... yes
+checking for gcry_control in -lssh2... no
+checking for telnet_init in -ltelnet... yes
+checking webp/encode.h usability... yes
+checking webp/encode.h presence... yes
+checking for webp/encode.h... yes
+checking for WebPEncode in -lwebp... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Doxyfile
+config.status: creating tests/Makefile
+config.status: creating src/common/Makefile
+config.status: creating src/common-ssh/Makefile
+config.status: creating src/terminal/Makefile
+config.status: creating src/libguac/Makefile
+config.status: creating src/guacd/Makefile
+config.status: creating src/guacd/man/guacd.8
+config.status: creating src/guacd/man/guacd.conf.5
+config.status: creating src/guacenc/Makefile
+config.status: creating src/guacenc/man/guacenc.1
+config.status: creating src/pulse/Makefile
+config.status: creating src/protocols/rdp/Makefile
+config.status: creating src/protocols/ssh/Makefile
+config.status: creating src/protocols/telnet/Makefile
+config.status: creating src/protocols/vnc/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+------------------------------------------------
+guacamole-server version 0.9.14
+------------------------------------------------
+
+   Library status:
+
+     freerdp ............. yes
+     pango ............... yes
+     libavcodec .......... yes
+     libavutil ........... yes
+     libssh2 ............. yes
+     libssl .............. yes
+     libswscale .......... yes
+     libtelnet ........... yes
+     libVNCServer ........ yes
+     libvorbis ........... yes
+     libpulse ............ yes
+     libwebp ............. yes
+     wsock32 ............. no
+
+   Protocol support:
+
+      RDP ....... yes
+      SSH ....... yes
+      Telnet .... yes
+      VNC ....... yes
+
+   Services / tools:
+
+      guacd ...... yes
+      guacenc .... yes
+
+   Init scripts: /etc/init.d
+
+Type "make" to compile guacamole-server.
+
+make  all-recursive
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server'
+Making all in src/libguac
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/libguac'
+  CC       libguac_la-audio.lo
+  CC       libguac_la-client.lo
+  CC       libguac_la-encode-jpeg.lo
+  CC       libguac_la-encode-png.lo
+  CC       libguac_la-error.lo
+  CC       libguac_la-hash.lo
+  CC       libguac_la-id.lo
+  CC       libguac_la-palette.lo
+  CC       libguac_la-parser.lo
+  CC       libguac_la-pool.lo
+  CC       libguac_la-protocol.lo
+  CC       libguac_la-raw_encoder.lo
+  CC       libguac_la-socket.lo
+  CC       libguac_la-socket-broadcast.lo
+  CC       libguac_la-socket-fd.lo
+  CC       libguac_la-socket-nest.lo
+  CC       libguac_la-socket-tee.lo
+  CC       libguac_la-timestamp.lo
+  CC       libguac_la-unicode.lo
+  CC       libguac_la-user.lo
+  CC       libguac_la-user-handlers.lo
+  CC       libguac_la-user-handshake.lo
+  CC       libguac_la-wait-fd.lo
+  CC       libguac_la-encode-webp.lo
+  CC       libguac_la-socket-ssl.lo
+  CCLD     libguac.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/libguac'
+Making all in src/common
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/common'
+  CC       libguac_common_la-io.lo
+  CC       libguac_common_la-blank_cursor.lo
+  CC       libguac_common_la-clipboard.lo
+  CC       libguac_common_la-cursor.lo
+  CC       libguac_common_la-display.lo
+  CC       libguac_common_la-dot_cursor.lo
+  CC       libguac_common_la-ibar_cursor.lo
+  CC       libguac_common_la-iconv.lo
+  CC       libguac_common_la-json.lo
+  CC       libguac_common_la-list.lo
+  CC       libguac_common_la-pointer_cursor.lo
+  CC       libguac_common_la-recording.lo
+  CC       libguac_common_la-rect.lo
+  CC       libguac_common_la-string.lo
+  CC       libguac_common_la-surface.lo
+  CCLD     libguac_common.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/common'
+Making all in tests
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/tests'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/tests'
+Making all in src/common-ssh
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/common-ssh'
+  CC       libguac_common_ssh_la-buffer.lo
+  CC       libguac_common_ssh_la-dsa-compat.lo
+  CC       libguac_common_ssh_la-rsa-compat.lo
+  CC       libguac_common_ssh_la-sftp.lo
+  CC       libguac_common_ssh_la-ssh.lo
+  CC       libguac_common_ssh_la-key.lo
+  CC       libguac_common_ssh_la-user.lo
+  CCLD     libguac_common_ssh.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/common-ssh'
+Making all in src/terminal
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/terminal'
+  CC       libguac_terminal_la-buffer.lo
+  CC       libguac_terminal_la-char_mappings.lo
+  CC       libguac_terminal_la-common.lo
+  CC       libguac_terminal_la-display.lo
+  CC       libguac_terminal_la-named-colors.lo
+  CC       libguac_terminal_la-palette.lo
+  CC       libguac_terminal_la-scrollbar.lo
+  CC       libguac_terminal_la-terminal.lo
+  CC       libguac_terminal_la-terminal_handlers.lo
+  CC       libguac_terminal_la-typescript.lo
+  CC       libguac_terminal_la-xparsecolor.lo
+  CCLD     libguac_terminal.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/terminal'
+Making all in src/pulse
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/pulse'
+  CC       libguac_pulse_la-pulse.lo
+  CCLD     libguac_pulse.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/pulse'
+Making all in src/protocols/rdp
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+./keymaps/generate.pl ./keymaps/base.keymap ./keymaps/failsafe.keymap ./keymaps/de_de_qwertz.keymap ./keymaps/en_us_qwerty.keymap ./keymaps/fr_fr_azerty.keymap ./keymaps/fr_ch_qwertz.keymap ./keymaps/it_it_qwerty.keymap ./keymaps/ja_jp_qwerty.keymap ./keymaps/sv_se_qwerty.keymap
+make  all-am
+make[3]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+  CC       guacai_la-audio_input.lo
+  CC       guac_ai/guacai_la-ai_messages.lo
+  CC       guac_ai/guacai_la-ai_service.lo
+  CC       guacai_la-ptr_string.lo
+  CC       compat/guacai_la-winpr-stream.lo
+  CCLD     guacai.la
+  CC       guac_rdpdr/guacdr_la-rdpdr_fs_messages.lo
+  CC       guac_rdpdr/guacdr_la-rdpdr_fs_messages_dir_info.lo
+  CC       guac_rdpdr/guacdr_la-rdpdr_fs_messages_file_info.lo
+  CC       guac_rdpdr/guacdr_la-rdpdr_fs_messages_vol_info.lo
+  CC       guac_rdpdr/guacdr_la-rdpdr_fs_service.lo
+  CC       guac_rdpdr/guacdr_la-rdpdr_messages.lo
+  CC       guac_rdpdr/guacdr_la-rdpdr_printer.lo
+  CC       guac_rdpdr/guacdr_la-rdpdr_service.lo
+  CC       guacdr_la-rdp_fs.lo
+  CC       guacdr_la-rdp_print_job.lo
+  CC       guacdr_la-rdp_stream.lo
+  CC       guacdr_la-unicode.lo
+  CC       compat/guacdr_la-winpr-stream.lo
+  CCLD     guacdr.la
+  CC       guac_rdpsnd/guacsnd_la-rdpsnd_messages.lo
+  CC       guac_rdpsnd/guacsnd_la-rdpsnd_service.lo
+  CC       compat/guacsnd_la-winpr-stream.lo
+  CCLD     guacsnd.la
+  CC       guac_svc/guacsvc_la-svc_service.lo
+  CC       guacsvc_la-rdp_svc.lo
+  CC       compat/guacsvc_la-winpr-stream.lo
+  CCLD     guacsvc.la
+  CC       libguac_client_rdp_la-audio_input.lo
+  CC       libguac_client_rdp_la-client.lo
+  CC       libguac_client_rdp_la-dvc.lo
+  CC       libguac_client_rdp_la-error.lo
+  CC       libguac_client_rdp_la-input.lo
+  CC       libguac_client_rdp_la-keyboard.lo
+  CC       libguac_client_rdp_la-ptr_string.lo
+  CC       libguac_client_rdp_la-rdp.lo
+  CC       libguac_client_rdp_la-rdp_bitmap.lo
+  CC       libguac_client_rdp_la-rdp_cliprdr.lo
+  CC       libguac_client_rdp_la-rdp_color.lo
+  CC       libguac_client_rdp_la-rdp_disp.lo
+  CC       libguac_client_rdp_la-rdp_fs.lo
+  CC       libguac_client_rdp_la-rdp_gdi.lo
+  CC       libguac_client_rdp_la-rdp_glyph.lo
+  CC       libguac_client_rdp_la-rdp_keymap.lo
+  CC       libguac_client_rdp_la-rdp_print_job.lo
+  CC       libguac_client_rdp_la-rdp_pointer.lo
+  CC       libguac_client_rdp_la-rdp_rail.lo
+  CC       libguac_client_rdp_la-rdp_settings.lo
+  CC       libguac_client_rdp_la-rdp_stream.lo
+  CC       libguac_client_rdp_la-rdp_svc.lo
+  CC       libguac_client_rdp_la-resolution.lo
+  CC       libguac_client_rdp_la-unicode.lo
+  CC       libguac_client_rdp_la-user.lo
+  CC       compat/libguac_client_rdp_la-winpr-stream.lo
+  CC       libguac_client_rdp_la-sftp.lo
+  CC       libguac_client_rdp_la-_generated_keymaps.lo
+  CCLD     libguac-client-rdp.la
+make[3]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+Making all in src/protocols/ssh
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/ssh'
+  CC       libguac_client_ssh_la-client.lo
+  CC       libguac_client_ssh_la-clipboard.lo
+  CC       libguac_client_ssh_la-input.lo
+  CC       libguac_client_ssh_la-settings.lo
+  CC       libguac_client_ssh_la-sftp.lo
+  CC       libguac_client_ssh_la-ssh.lo
+  CC       libguac_client_ssh_la-user.lo
+  CCLD     libguac-client-ssh.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/ssh'
+Making all in src/protocols/telnet
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/telnet'
+  CC       libguac_client_telnet_la-client.lo
+  CC       libguac_client_telnet_la-clipboard.lo
+  CC       libguac_client_telnet_la-input.lo
+  CC       libguac_client_telnet_la-settings.lo
+  CC       libguac_client_telnet_la-telnet.lo
+  CC       libguac_client_telnet_la-user.lo
+  CCLD     libguac-client-telnet.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/telnet'
+Making all in src/protocols/vnc
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/vnc'
+  CC       libguac_client_vnc_la-auth.lo
+  CC       libguac_client_vnc_la-client.lo
+  CC       libguac_client_vnc_la-clipboard.lo
+  CC       libguac_client_vnc_la-cursor.lo
+  CC       libguac_client_vnc_la-display.lo
+  CC       libguac_client_vnc_la-input.lo
+  CC       libguac_client_vnc_la-log.lo
+  CC       libguac_client_vnc_la-settings.lo
+  CC       libguac_client_vnc_la-user.lo
+  CC       libguac_client_vnc_la-vnc.lo
+  CC       libguac_client_vnc_la-sftp.lo
+  CCLD     libguac-client-vnc.la
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/vnc'
+Making all in src/guacd
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/guacd'
+  CC       guacd-conf-args.o
+  CC       guacd-conf-file.o
+  CC       guacd-conf-parse.o
+  CC       guacd-connection.o
+  CC       guacd-daemon.o
+  CC       guacd-log.o
+  CC       guacd-move-fd.o
+  CC       guacd-proc.o
+  CC       guacd-proc-map.o
+  CCLD     guacd
+sed -e 's,[@]sbindir[@],/usr/local/sbin,g' < init.d/guacd.in > init.d/guacd
+chmod +x init.d/guacd
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/guacd'
+Making all in src/guacenc
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/guacenc'
+  CC       guacenc-buffer.o
+  CC       guacenc-display.o
+  CC       guacenc-display-buffers.o
+  CC       guacenc-display-image-streams.o
+  CC       guacenc-display-flatten.o
+  CC       guacenc-display-layers.o
+  CC       guacenc-display-sync.o
+  CC       guacenc-encode.o
+  CC       guacenc-ffmpeg-compat.o
+  CC       guacenc-guacenc.o
+  CC       guacenc-image-stream.o
+  CC       guacenc-instructions.o
+  CC       guacenc-instruction-blob.o
+  CC       guacenc-instruction-cfill.o
+  CC       guacenc-instruction-copy.o
+  CC       guacenc-instruction-cursor.o
+  CC       guacenc-instruction-dispose.o
+  CC       guacenc-instruction-end.o
+  CC       guacenc-instruction-img.o
+  CC       guacenc-instruction-move.o
+  CC       guacenc-instruction-rect.o
+  CC       guacenc-instruction-shade.o
+  CC       guacenc-instruction-size.o
+  CC       guacenc-instruction-sync.o
+  CC       guacenc-instruction-transfer.o
+  CC       guacenc-jpeg.o
+  CC       guacenc-layer.o
+  CC       guacenc-log.o
+  CC       guacenc-parse.o
+  CC       guacenc-png.o
+  CC       guacenc-video.o
+  CC       guacenc-webp.o
+  CCLD     guacenc
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/guacenc'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server'
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server'
+Making install in src/libguac
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/libguac'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/libguac'
+ /bin/mkdir -p '/usr/local/lib'
+ /bin/sh ../../libtool   --mode=install /bin/install -c   libguac.la '/usr/local/lib'
+libtool: install: /bin/install -c .libs/libguac.so.12.3.0 /usr/local/lib/libguac.so.12.3.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac.so.12.3.0 libguac.so.12 || { rm -f libguac.so.12 && ln -s libguac.so.12.3.0 libguac.so.12; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac.so.12.3.0 libguac.so || { rm -f libguac.so && ln -s libguac.so.12.3.0 libguac.so; }; })
+libtool: install: /bin/install -c .libs/libguac.lai /usr/local/lib/libguac.la
+libtool: install: /bin/install -c .libs/libguac.a /usr/local/lib/libguac.a
+libtool: install: chmod 644 /usr/local/lib/libguac.a
+libtool: install: ranlib /usr/local/lib/libguac.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/usr/local/include/guacamole'
+ /bin/install -c -m 644 guacamole/audio.h guacamole/audio-fntypes.h guacamole/audio-types.h guacamole/client-constants.h guacamole/client.h guacamole/client-fntypes.h guacamole/client-types.h guacamole/error.h guacamole/error-types.h guacamole/hash.h guacamole/layer.h guacamole/layer-types.h guacamole/object.h guacamole/object-types.h guacamole/parser-constants.h guacamole/parser.h guacamole/parser-types.h guacamole/plugin-constants.h guacamole/plugin.h guacamole/pool.h guacamole/pool-types.h guacamole/protocol.h guacamole/protocol-types.h guacamole/socket-constants.h guacamole/socket.h guacamole/socket-fntypes.h guacamole/socket-types.h guacamole/stream.h guacamole/stream-types.h guacamole/timestamp.h guacamole/timestamp-types.h guacamole/unicode.h guacamole/user.h guacamole/user-constants.h guacamole/user-fntypes.h guacamole/user-types.h guacamole/socket-ssl.h '/usr/local/include/guacamole'
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/libguac'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/libguac'
+Making install in src/common
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/common'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/common'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/common'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/common'
+Making install in tests
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/tests'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/tests'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/tests'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/tests'
+Making install in src/common-ssh
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/common-ssh'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/common-ssh'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/common-ssh'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/common-ssh'
+Making install in src/terminal
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/terminal'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/terminal'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/terminal'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/terminal'
+Making install in src/pulse
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/pulse'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/pulse'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/pulse'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/pulse'
+Making install in src/protocols/rdp
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+make  install-am
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+make[3]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+ /bin/mkdir -p '/usr/local/lib'
+ /bin/sh ../../../libtool   --mode=install /bin/install -c   libguac-client-rdp.la '/usr/local/lib'
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/rdp; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -Iinclude -I../../../src/common -I../../../src/common-ssh -I../../../src/libguac -g -O2 -version-info 0:0:0 -lcairo -lpthread -lfreerdp-core -lfreerdp-cache -lfreerdp-channels -lfreerdp-utils -lfreerdp-codec -o libguac-client-rdp.la -rpath /usr/local/lib libguac_client_rdp_la-audio_input.lo libguac_client_rdp_la-client.lo libguac_client_rdp_la-dvc.lo libguac_client_rdp_la-error.lo libguac_client_rdp_la-input.lo libguac_client_rdp_la-keyboard.lo libguac_client_rdp_la-ptr_string.lo libguac_client_rdp_la-rdp.lo libguac_client_rdp_la-rdp_bitmap.lo libguac_client_rdp_la-rdp_cliprdr.lo libguac_client_rdp_la-rdp_color.lo libguac_client_rdp_la-rdp_disp.lo libguac_client_rdp_la-rdp_fs.lo libguac_client_rdp_la-rdp_gdi.lo libguac_client_rdp_la-rdp_glyph.lo libguac_client_rdp_la-rdp_keymap.lo libguac_client_rdp_la-rdp_print_job.lo libguac_client_rdp_la-rdp_pointer.lo libguac_client_rdp_la-rdp_rail.lo libguac_client_rdp_la-rdp_settings.lo libguac_client_rdp_la-rdp_stream.lo libguac_client_rdp_la-rdp_svc.lo libguac_client_rdp_la-resolution.lo libguac_client_rdp_la-unicode.lo libguac_client_rdp_la-user.lo compat/libguac_client_rdp_la-winpr-stream.lo libguac_client_rdp_la-sftp.lo libguac_client_rdp_la-_generated_keymaps.lo ../../../src/common/libguac_common.la ../../../src/libguac/libguac.la ../../../src/common-ssh/libguac_common_ssh.la )
+libtool: install: /bin/install -c .libs/libguac-client-rdp.so.0.0.0T /usr/local/lib/libguac-client-rdp.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-rdp.so.0.0.0 libguac-client-rdp.so.0 || { rm -f libguac-client-rdp.so.0 && ln -s libguac-client-rdp.so.0.0.0 libguac-client-rdp.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-rdp.so.0.0.0 libguac-client-rdp.so || { rm -f libguac-client-rdp.so && ln -s libguac-client-rdp.so.0.0.0 libguac-client-rdp.so; }; })
+libtool: install: /bin/install -c .libs/libguac-client-rdp.lai /usr/local/lib/libguac-client-rdp.la
+libtool: install: /bin/install -c .libs/libguac-client-rdp.a /usr/local/lib/libguac-client-rdp.a
+libtool: install: chmod 644 /usr/local/lib/libguac-client-rdp.a
+libtool: install: ranlib /usr/local/lib/libguac-client-rdp.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/usr/local/lib/freerdp'
+ /bin/sh ../../../libtool   --mode=install /bin/install -c   guacai.la guacdr.la guacsnd.la guacsvc.la '/usr/local/lib/freerdp'
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/rdp; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -Iinclude -I../../../src/common -I../../../src/common-ssh -I../../../src/libguac -g -O2 -module -avoid-version -shared -lpthread -lfreerdp-core -lfreerdp-cache -lfreerdp-channels -lfreerdp-utils -lfreerdp-codec -o guacai.la -rpath /usr/local/lib/freerdp guacai_la-audio_input.lo guac_ai/guacai_la-ai_messages.lo guac_ai/guacai_la-ai_service.lo guacai_la-ptr_string.lo compat/guacai_la-winpr-stream.lo ../../../src/common/libguac_common.la ../../../src/libguac/libguac.la )
+libtool: install: /bin/install -c .libs/guacai.soT /usr/local/lib/freerdp/guacai.so
+libtool: install: /bin/install -c .libs/guacai.lai /usr/local/lib/freerdp/guacai.la
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/rdp; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -Iinclude -I../../../src/common -I../../../src/common-ssh -I../../../src/libguac -g -O2 -module -avoid-version -shared -lpthread -lfreerdp-core -lfreerdp-cache -lfreerdp-channels -lfreerdp-utils -lfreerdp-codec -o guacdr.la -rpath /usr/local/lib/freerdp guac_rdpdr/guacdr_la-rdpdr_fs_messages.lo guac_rdpdr/guacdr_la-rdpdr_fs_messages_dir_info.lo guac_rdpdr/guacdr_la-rdpdr_fs_messages_file_info.lo guac_rdpdr/guacdr_la-rdpdr_fs_messages_vol_info.lo guac_rdpdr/guacdr_la-rdpdr_fs_service.lo guac_rdpdr/guacdr_la-rdpdr_messages.lo guac_rdpdr/guacdr_la-rdpdr_printer.lo guac_rdpdr/guacdr_la-rdpdr_service.lo guacdr_la-rdp_fs.lo guacdr_la-rdp_print_job.lo guacdr_la-rdp_stream.lo guacdr_la-unicode.lo compat/guacdr_la-winpr-stream.lo ../../../src/common/libguac_common.la ../../../src/libguac/libguac.la )
+libtool: install: /bin/install -c .libs/guacdr.soT /usr/local/lib/freerdp/guacdr.so
+libtool: install: /bin/install -c .libs/guacdr.lai /usr/local/lib/freerdp/guacdr.la
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/rdp; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -Iinclude -I../../../src/common -I../../../src/common-ssh -I../../../src/libguac -g -O2 -module -avoid-version -shared -lpthread -lfreerdp-core -lfreerdp-cache -lfreerdp-channels -lfreerdp-utils -lfreerdp-codec -o guacsnd.la -rpath /usr/local/lib/freerdp guac_rdpsnd/guacsnd_la-rdpsnd_messages.lo guac_rdpsnd/guacsnd_la-rdpsnd_service.lo compat/guacsnd_la-winpr-stream.lo ../../../src/common/libguac_common.la ../../../src/libguac/libguac.la )
+libtool: install: /bin/install -c .libs/guacsnd.soT /usr/local/lib/freerdp/guacsnd.so
+libtool: install: /bin/install -c .libs/guacsnd.lai /usr/local/lib/freerdp/guacsnd.la
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/rdp; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -Iinclude -I../../../src/common -I../../../src/common-ssh -I../../../src/libguac -g -O2 -module -avoid-version -shared -lpthread -lfreerdp-core -lfreerdp-cache -lfreerdp-channels -lfreerdp-utils -lfreerdp-codec -o guacsvc.la -rpath /usr/local/lib/freerdp guac_svc/guacsvc_la-svc_service.lo guacsvc_la-rdp_svc.lo compat/guacsvc_la-winpr-stream.lo ../../../src/common/libguac_common.la ../../../src/libguac/libguac.la )
+libtool: install: /bin/install -c .libs/guacsvc.soT /usr/local/lib/freerdp/guacsvc.so
+libtool: install: /bin/install -c .libs/guacsvc.lai /usr/local/lib/freerdp/guacsvc.la
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib/freerdp
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib/freerdp
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[3]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/rdp'
+Making install in src/protocols/ssh
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/ssh'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/ssh'
+ /bin/mkdir -p '/usr/local/lib'
+ /bin/sh ../../../libtool   --mode=install /bin/install -c   libguac-client-ssh.la '/usr/local/lib'
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/ssh; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -Iinclude -I../../../src/common-ssh -I../../../src/libguac -I../../../src/terminal -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng15 -I/usr/include/libdrm -I../../../src/common -g -O2 -version-info 0:0:0 -lpthread -lssh2 -lssl -lcrypto -o libguac-client-ssh.la -rpath /usr/local/lib libguac_client_ssh_la-client.lo libguac_client_ssh_la-clipboard.lo libguac_client_ssh_la-input.lo libguac_client_ssh_la-settings.lo libguac_client_ssh_la-sftp.lo libguac_client_ssh_la-ssh.lo libguac_client_ssh_la-user.lo ../../../src/common/libguac_common.la ../../../src/common-ssh/libguac_common_ssh.la ../../../src/libguac/libguac.la ../../../src/terminal/libguac_terminal.la )
+libtool: install: /bin/install -c .libs/libguac-client-ssh.so.0.0.0T /usr/local/lib/libguac-client-ssh.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-ssh.so.0.0.0 libguac-client-ssh.so.0 || { rm -f libguac-client-ssh.so.0 && ln -s libguac-client-ssh.so.0.0.0 libguac-client-ssh.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-ssh.so.0.0.0 libguac-client-ssh.so || { rm -f libguac-client-ssh.so && ln -s libguac-client-ssh.so.0.0.0 libguac-client-ssh.so; }; })
+libtool: install: /bin/install -c .libs/libguac-client-ssh.lai /usr/local/lib/libguac-client-ssh.la
+libtool: install: /bin/install -c .libs/libguac-client-ssh.a /usr/local/lib/libguac-client-ssh.a
+libtool: install: chmod 644 /usr/local/lib/libguac-client-ssh.a
+libtool: install: ranlib /usr/local/lib/libguac-client-ssh.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/ssh'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/ssh'
+Making install in src/protocols/telnet
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/telnet'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/telnet'
+ /bin/mkdir -p '/usr/local/lib'
+ /bin/sh ../../../libtool   --mode=install /bin/install -c   libguac-client-telnet.la '/usr/local/lib'
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/telnet; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -Iinclude -I../../../src/libguac -I../../../src/terminal -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng15 -I/usr/include/libdrm -I../../../src/common -g -O2 -version-info 0:0:0 -lpthread -ltelnet -o libguac-client-telnet.la -rpath /usr/local/lib libguac_client_telnet_la-client.lo libguac_client_telnet_la-clipboard.lo libguac_client_telnet_la-input.lo libguac_client_telnet_la-settings.lo libguac_client_telnet_la-telnet.lo libguac_client_telnet_la-user.lo ../../../src/common/libguac_common.la ../../../src/libguac/libguac.la ../../../src/terminal/libguac_terminal.la )
+libtool: install: /bin/install -c .libs/libguac-client-telnet.so.0.0.0T /usr/local/lib/libguac-client-telnet.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-telnet.so.0.0.0 libguac-client-telnet.so.0 || { rm -f libguac-client-telnet.so.0 && ln -s libguac-client-telnet.so.0.0.0 libguac-client-telnet.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-telnet.so.0.0.0 libguac-client-telnet.so || { rm -f libguac-client-telnet.so && ln -s libguac-client-telnet.so.0.0.0 libguac-client-telnet.so; }; })
+libtool: install: /bin/install -c .libs/libguac-client-telnet.lai /usr/local/lib/libguac-client-telnet.la
+libtool: install: /bin/install -c .libs/libguac-client-telnet.a /usr/local/lib/libguac-client-telnet.a
+libtool: install: chmod 644 /usr/local/lib/libguac-client-telnet.a
+libtool: install: ranlib /usr/local/lib/libguac-client-telnet.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/telnet'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/telnet'
+Making install in src/protocols/vnc
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/vnc'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/vnc'
+ /bin/mkdir -p '/usr/local/lib'
+ /bin/sh ../../../libtool   --mode=install /bin/install -c   libguac-client-vnc.la '/usr/local/lib'
+libtool: install: (cd /usr/local/src/guacamole/0.9.14/server/src/protocols/vnc; /bin/sh "/usr/local/src/guacamole/0.9.14/server/libtool"  --silent --tag CC --mode=relink gcc -std=gnu99 -Werror -Wall -pedantic -Iinclude -I../../../src/common -I../../../src/common-ssh -I../../../src/libguac -I../../../src/pulse -g -O2 -version-info 0:0:0 -lcairo -lvncclient -o libguac-client-vnc.la -rpath /usr/local/lib libguac_client_vnc_la-auth.lo libguac_client_vnc_la-client.lo libguac_client_vnc_la-clipboard.lo libguac_client_vnc_la-cursor.lo libguac_client_vnc_la-display.lo libguac_client_vnc_la-input.lo libguac_client_vnc_la-log.lo libguac_client_vnc_la-settings.lo libguac_client_vnc_la-user.lo libguac_client_vnc_la-vnc.lo libguac_client_vnc_la-sftp.lo ../../../src/common/libguac_common.la ../../../src/libguac/libguac.la ../../../src/common-ssh/libguac_common_ssh.la ../../../src/pulse/libguac_pulse.la )
+libtool: install: /bin/install -c .libs/libguac-client-vnc.so.0.0.0T /usr/local/lib/libguac-client-vnc.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-vnc.so.0.0.0 libguac-client-vnc.so.0 || { rm -f libguac-client-vnc.so.0 && ln -s libguac-client-vnc.so.0.0.0 libguac-client-vnc.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libguac-client-vnc.so.0.0.0 libguac-client-vnc.so || { rm -f libguac-client-vnc.so && ln -s libguac-client-vnc.so.0.0.0 libguac-client-vnc.so; }; })
+libtool: install: /bin/install -c .libs/libguac-client-vnc.lai /usr/local/lib/libguac-client-vnc.la
+libtool: install: /bin/install -c .libs/libguac-client-vnc.a /usr/local/lib/libguac-client-vnc.a
+libtool: install: chmod 644 /usr/local/lib/libguac-client-vnc.a
+libtool: install: ranlib /usr/local/lib/libguac-client-vnc.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/vnc'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/protocols/vnc'
+Making install in src/guacd
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/guacd'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/guacd'
+ /bin/mkdir -p '/usr/local/sbin'
+  /bin/sh ../../libtool   --mode=install /bin/install -c guacd '/usr/local/sbin'
+libtool: install: /bin/install -c .libs/guacd /usr/local/sbin/guacd
+ /bin/mkdir -p '/etc/init.d'
+ /bin/install -c init.d/guacd '/etc/init.d'
+ /bin/mkdir -p '/usr/local/share/man/man5'
+ /bin/install -c -m 644 man/guacd.conf.5 '/usr/local/share/man/man5'
+ /bin/mkdir -p '/usr/local/share/man/man8'
+ /bin/install -c -m 644 man/guacd.8 '/usr/local/share/man/man8'
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/guacd'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/guacd'
+Making install in src/guacenc
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/guacenc'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server/src/guacenc'
+ /bin/mkdir -p '/usr/local/bin'
+  /bin/sh ../../libtool   --mode=install /bin/install -c guacenc '/usr/local/bin'
+libtool: install: /bin/install -c .libs/guacenc /usr/local/bin/guacenc
+ /bin/mkdir -p '/usr/local/share/man/man1'
+ /bin/install -c -m 644 man/guacenc.1 '/usr/local/share/man/man1'
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/guacenc'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server/src/guacenc'
+make[1]: Entering directory `/usr/local/src/guacamole/0.9.14/server'
+make[2]: Entering directory `/usr/local/src/guacamole/0.9.14/server'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Leaving directory `/usr/local/src/guacamole/0.9.14/server'
+make[1]: Leaving directory `/usr/local/src/guacamole/0.9.14/server'
+
+Copying Gucamole Client...
+
+‘client/guacamole.war’ -> ‘/var/lib/guacamole/guacamole.war’
+
+Making Guacamole configurtion files...
+
+
+Making Guacamole simbolic links...
+
+‘/var/lib/tomcat/webapps/guacamole.war’ -> ‘/var/lib/guacamole/guacamole.war’
+‘/usr/share/tomcat/.guacamole/guacamole.properties’ -> ‘/etc/guacamole/guacamole.properties’
+‘/usr/share/tomcat/.guacamole/lib’ -> ‘/var/lib/guacamole/lib/’
+‘/usr/share/tomcat/.guacamole/extensions’ -> ‘/var/lib/guacamole/extensions/’
+‘/usr/lib64/freerdp/guacai.la’ -> ‘/usr/local/lib/freerdp/guacai.la’
+‘/usr/lib64/freerdp/guacai.so’ -> ‘/usr/local/lib/freerdp/guacai.so’
+‘/usr/lib64/freerdp/guacdr.la’ -> ‘/usr/local/lib/freerdp/guacdr.la’
+‘/usr/lib64/freerdp/guacdr.so’ -> ‘/usr/local/lib/freerdp/guacdr.so’
+‘/usr/lib64/freerdp/guacsnd.la’ -> ‘/usr/local/lib/freerdp/guacsnd.la’
+‘/usr/lib64/freerdp/guacsnd.so’ -> ‘/usr/local/lib/freerdp/guacsnd.so’
+‘/usr/lib64/freerdp/guacsvc.la’ -> ‘/usr/local/lib/freerdp/guacsvc.la’
+‘/usr/lib64/freerdp/guacsvc.so’ -> ‘/usr/local/lib/freerdp/guacsvc.so’
+
+Copying Guacamole JDBC Extension to Extensions Dir...
+
+‘extension/mysql/guacamole-auth-jdbc-mysql-0.9.14.jar’ -> ‘/var/lib/guacamole/extensions/guacamole-auth-jdbc-mysql-0.9.14.jar’
+
+Copying MySQL Connector to Lib Dir...
+
+‘mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar’ -> ‘/var/lib/guacamole//lib/mysql-connector-java-5.1.44-bin.jar’
+
+Setting MariaDB Service...
+
+
+Setting Root Password for MariaDB...
+
+
+Creating BD & User for Guacamole...
+
+
+Creating Guacamole Tables...
+
+
+Setting Tomcat Server...
+
+
+Please complete the Wizard for the Java KeyStore
+
+
+Setting Tomcat and Guacamole Service...
+
+Created symlink from /etc/systemd/system/multi-user.target.wants/tomcat.service to /usr/lib/systemd/system/tomcat.service.
+
+Installing Nginx repository...
+
+Installing Nginx...
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.mirror.net.in
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos.excellmedia.net
+ * rpmfusion-free-updates: mirror.proserve.nl
+ * updates: centos.excellmedia.net
+Package pv-1.4.6-1.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package nginx.x86_64 1:1.12.2-2.el7 will be installed
+--> Processing Dependency: nginx-all-modules = 1:1.12.2-2.el7 for package: 1:nginx-1.12.2-2.el7.x86_64
+--> Processing Dependency: nginx-filesystem = 1:1.12.2-2.el7 for package: 1:nginx-1.12.2-2.el7.x86_64
+--> Processing Dependency: nginx-filesystem for package: 1:nginx-1.12.2-2.el7.x86_64
+--> Processing Dependency: libprofiler.so.0()(64bit) for package: 1:nginx-1.12.2-2.el7.x86_64
+--> Running transaction check
+---> Package gperftools-libs.x86_64 0:2.4-8.el7 will be installed
+--> Processing Dependency: libunwind.so.8()(64bit) for package: gperftools-libs-2.4-8.el7.x86_64
+---> Package nginx-all-modules.noarch 1:1.12.2-2.el7 will be installed
+--> Processing Dependency: nginx-mod-http-geoip = 1:1.12.2-2.el7 for package: 1:nginx-all-modules-1.12.2-2.el7.noarch
+--> Processing Dependency: nginx-mod-http-image-filter = 1:1.12.2-2.el7 for package: 1:nginx-all-modules-1.12.2-2.el7.noarch
+--> Processing Dependency: nginx-mod-http-perl = 1:1.12.2-2.el7 for package: 1:nginx-all-modules-1.12.2-2.el7.noarch
+--> Processing Dependency: nginx-mod-http-xslt-filter = 1:1.12.2-2.el7 for package: 1:nginx-all-modules-1.12.2-2.el7.noarch
+--> Processing Dependency: nginx-mod-mail = 1:1.12.2-2.el7 for package: 1:nginx-all-modules-1.12.2-2.el7.noarch
+--> Processing Dependency: nginx-mod-stream = 1:1.12.2-2.el7 for package: 1:nginx-all-modules-1.12.2-2.el7.noarch
+---> Package nginx-filesystem.noarch 1:1.12.2-2.el7 will be installed
+--> Running transaction check
+---> Package libunwind.x86_64 2:1.2-2.el7 will be installed
+---> Package nginx-mod-http-geoip.x86_64 1:1.12.2-2.el7 will be installed
+---> Package nginx-mod-http-image-filter.x86_64 1:1.12.2-2.el7 will be installed
+--> Processing Dependency: gd for package: 1:nginx-mod-http-image-filter-1.12.2-2.el7.x86_64
+--> Processing Dependency: libgd.so.2()(64bit) for package: 1:nginx-mod-http-image-filter-1.12.2-2.el7.x86_64
+---> Package nginx-mod-http-perl.x86_64 1:1.12.2-2.el7 will be installed
+---> Package nginx-mod-http-xslt-filter.x86_64 1:1.12.2-2.el7 will be installed
+---> Package nginx-mod-mail.x86_64 1:1.12.2-2.el7 will be installed
+---> Package nginx-mod-stream.x86_64 1:1.12.2-2.el7 will be installed
+--> Running transaction check
+---> Package gd.x86_64 0:2.0.35-26.el7 will be installed
+--> Processing Dependency: libXpm.so.4()(64bit) for package: gd-2.0.35-26.el7.x86_64
+--> Running transaction check
+---> Package libXpm.x86_64 0:3.5.12-1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                         Arch       Version              Repository
+                                                                           Size
+================================================================================
+Installing:
+ nginx                           x86_64     1:1.12.2-2.el7       epel     530 k
+Installing for dependencies:
+ gd                              x86_64     2.0.35-26.el7        base     146 k
+ gperftools-libs                 x86_64     2.4-8.el7            base     272 k
+ libXpm                          x86_64     3.5.12-1.el7         base      55 k
+ libunwind                       x86_64     2:1.2-2.el7          base      57 k
+ nginx-all-modules               noarch     1:1.12.2-2.el7       epel      16 k
+ nginx-filesystem                noarch     1:1.12.2-2.el7       epel      17 k
+ nginx-mod-http-geoip            x86_64     1:1.12.2-2.el7       epel      23 k
+ nginx-mod-http-image-filter     x86_64     1:1.12.2-2.el7       epel      26 k
+ nginx-mod-http-perl             x86_64     1:1.12.2-2.el7       epel      36 k
+ nginx-mod-http-xslt-filter      x86_64     1:1.12.2-2.el7       epel      26 k
+ nginx-mod-mail                  x86_64     1:1.12.2-2.el7       epel      54 k
+ nginx-mod-stream                x86_64     1:1.12.2-2.el7       epel      76 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+12 Dependent packages)
+
+Total download size: 1.3 M
+Installed size: 4.0 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              2.0 MB/s | 1.3 MB  00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 2:libunwind-1.2-2.el7.x86_64                                1/13
+  Installing : gperftools-libs-2.4-8.el7.x86_64                            2/13
+  Installing : 1:nginx-filesystem-1.12.2-2.el7.noarch                      3/13
+  Installing : libXpm-3.5.12-1.el7.x86_64                                  4/13
+  Installing : gd-2.0.35-26.el7.x86_64                                     5/13
+  Installing : 1:nginx-mod-http-perl-1.12.2-2.el7.x86_64                   6/13
+  Installing : 1:nginx-mod-http-geoip-1.12.2-2.el7.x86_64                  7/13
+  Installing : 1:nginx-mod-mail-1.12.2-2.el7.x86_64                        8/13
+  Installing : 1:nginx-mod-http-xslt-filter-1.12.2-2.el7.x86_64            9/13
+  Installing : 1:nginx-mod-stream-1.12.2-2.el7.x86_64                     10/13
+  Installing : 1:nginx-1.12.2-2.el7.x86_64                                11/13
+  Installing : 1:nginx-mod-http-image-filter-1.12.2-2.el7.x86_64          12/13
+  Installing : 1:nginx-all-modules-1.12.2-2.el7.noarch                    13/13
+  Verifying  : libXpm-3.5.12-1.el7.x86_64                                  1/13
+  Verifying  : 1:nginx-filesystem-1.12.2-2.el7.noarch                      2/13
+  Verifying  : gd-2.0.35-26.el7.x86_64                                     3/13
+  Verifying  : gperftools-libs-2.4-8.el7.x86_64                            4/13
+  Verifying  : 1:nginx-mod-http-perl-1.12.2-2.el7.x86_64                   5/13
+  Verifying  : 1:nginx-mod-http-geoip-1.12.2-2.el7.x86_64                  6/13
+  Verifying  : 1:nginx-1.12.2-2.el7.x86_64                                 7/13
+  Verifying  : 1:nginx-mod-mail-1.12.2-2.el7.x86_64                        8/13
+  Verifying  : 1:nginx-all-modules-1.12.2-2.el7.noarch                     9/13
+  Verifying  : 1:nginx-mod-http-xslt-filter-1.12.2-2.el7.x86_64           10/13
+  Verifying  : 1:nginx-mod-http-image-filter-1.12.2-2.el7.x86_64          11/13
+  Verifying  : 2:libunwind-1.2-2.el7.x86_64                               12/13
+  Verifying  : 1:nginx-mod-stream-1.12.2-2.el7.x86_64                     13/13
+
+Installed:
+  nginx.x86_64 1:1.12.2-2.el7
+
+Dependency Installed:
+  gd.x86_64 0:2.0.35-26.el7
+  gperftools-libs.x86_64 0:2.4-8.el7
+  libXpm.x86_64 0:3.5.12-1.el7
+  libunwind.x86_64 2:1.2-2.el7
+  nginx-all-modules.noarch 1:1.12.2-2.el7
+  nginx-filesystem.noarch 1:1.12.2-2.el7
+  nginx-mod-http-geoip.x86_64 1:1.12.2-2.el7
+  nginx-mod-http-image-filter.x86_64 1:1.12.2-2.el7
+  nginx-mod-http-perl.x86_64 1:1.12.2-2.el7
+  nginx-mod-http-xslt-filter.x86_64 1:1.12.2-2.el7
+  nginx-mod-mail.x86_64 1:1.12.2-2.el7
+  nginx-mod-stream.x86_64 1:1.12.2-2.el7
+
+Complete!
+yum install RC is: 0
+
+Making Nginx Backup
+mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.ori.bkp
+
+Making Nginx configurations...
+
+Downloading certboot tool...
+
+
+Changing permissions to certboot...
+
+
+Generating a Let's Encrypt SSL Certificate...
+
+Bootstrapping dependencies for RedHat-based OSes... (you can skip this with --no-bootstrap)
+yum is /bin/yum
+yum is hashed (/bin/yum)
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: centos.mirror.net.in
+ * epel: del-mirrors.extreme-ix.org
+ * extras: centos.excellmedia.net
+ * rpmfusion-free-updates: download1.rpmfusion.org
+ * updates: centos.excellmedia.net
+Package gcc-4.8.5-16.el7_4.2.x86_64 already installed and latest version
+Package 1:openssl-1.0.2k-8.el7.x86_64 already installed and latest version
+Package 1:openssl-devel-1.0.2k-8.el7.x86_64 already installed and latest version
+Package ca-certificates-2017.2.14-71.el7.noarch already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package augeas-libs.x86_64 0:1.4.0-2.el7_4.2 will be installed
+---> Package libffi-devel.x86_64 0:3.0.13-18.el7 will be installed
+---> Package python-devel.x86_64 0:2.7.5-58.el7 will be installed
+---> Package python-tools.x86_64 0:2.7.5-58.el7 will be installed
+--> Processing Dependency: tkinter = 2.7.5-58.el7 for package: python-tools-2.7.5-58.el7.x86_64
+---> Package python-virtualenv.noarch 0:1.10.1-4.el7 will be installed
+---> Package python2-pip.noarch 0:8.1.2-5.el7 will be installed
+---> Package redhat-rpm-config.noarch 0:9.1.0-76.el7.centos will be installed
+--> Processing Dependency: dwz >= 0.4 for package: redhat-rpm-config-9.1.0-76.el7.centos.noarch
+--> Processing Dependency: zip for package: redhat-rpm-config-9.1.0-76.el7.centos.noarch
+--> Processing Dependency: perl-srpm-macros for package: redhat-rpm-config-9.1.0-76.el7.centos.noarch
+--> Running transaction check
+---> Package dwz.x86_64 0:0.11-3.el7 will be installed
+---> Package perl-srpm-macros.noarch 0:1-8.el7 will be installed
+---> Package tkinter.x86_64 0:2.7.5-58.el7 will be installed
+--> Processing Dependency: libtk8.5.so()(64bit) for package: tkinter-2.7.5-58.el7.x86_64
+--> Processing Dependency: libtcl8.5.so()(64bit) for package: tkinter-2.7.5-58.el7.x86_64
+--> Processing Dependency: libTix.so()(64bit) for package: tkinter-2.7.5-58.el7.x86_64
+---> Package zip.x86_64 0:3.0-11.el7 will be installed
+--> Running transaction check
+---> Package tcl.x86_64 1:8.5.13-8.el7 will be installed
+---> Package tix.x86_64 1:8.4.3-12.el7 will be installed
+---> Package tk.x86_64 1:8.5.13-6.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch        Version                  Repository    Size
+================================================================================
+Installing:
+ augeas-libs            x86_64      1.4.0-2.el7_4.2          updates      355 k
+ libffi-devel           x86_64      3.0.13-18.el7            base          23 k
+ python-devel           x86_64      2.7.5-58.el7             base         395 k
+ python-tools           x86_64      2.7.5-58.el7             base         853 k
+ python-virtualenv      noarch      1.10.1-4.el7             base         1.2 M
+ python2-pip            noarch      8.1.2-5.el7              epel         1.7 M
+ redhat-rpm-config      noarch      9.1.0-76.el7.centos      base          79 k
+Installing for dependencies:
+ dwz                    x86_64      0.11-3.el7               base          99 k
+ perl-srpm-macros       noarch      1-8.el7                  base         4.6 k
+ tcl                    x86_64      1:8.5.13-8.el7           base         1.9 M
+ tix                    x86_64      1:8.4.3-12.el7           base         254 k
+ tk                     x86_64      1:8.5.13-6.el7           base         1.4 M
+ tkinter                x86_64      2.7.5-58.el7             base         323 k
+ zip                    x86_64      3.0-11.el7               base         260 k
+
+Transaction Summary
+================================================================================
+Install  7 Packages (+7 Dependent packages)
+
+Total download size: 8.8 M
+Installed size: 25 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              9.0 MB/s | 8.8 MB  00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 1:tcl-8.5.13-8.el7.x86_64                                   1/14
+  Installing : 1:tk-8.5.13-6.el7.x86_64                                    2/14
+  Installing : 1:tix-8.4.3-12.el7.x86_64                                   3/14
+  Installing : tkinter-2.7.5-58.el7.x86_64                                 4/14
+  Installing : dwz-0.11-3.el7.x86_64                                       5/14
+  Installing : perl-srpm-macros-1-8.el7.noarch                             6/14
+  Installing : zip-3.0-11.el7.x86_64                                       7/14
+  Installing : python-devel-2.7.5-58.el7.x86_64                            8/14
+  Installing : python-virtualenv-1.10.1-4.el7.noarch                       9/14
+  Installing : redhat-rpm-config-9.1.0-76.el7.centos.noarch               10/14
+  Installing : python-tools-2.7.5-58.el7.x86_64                           11/14
+  Installing : augeas-libs-1.4.0-2.el7_4.2.x86_64                         12/14
+  Installing : python2-pip-8.1.2-5.el7.noarch                             13/14
+  Installing : libffi-devel-3.0.13-18.el7.x86_64                          14/14
+  Verifying  : python-virtualenv-1.10.1-4.el7.noarch                       1/14
+  Verifying  : python-devel-2.7.5-58.el7.x86_64                            2/14
+  Verifying  : libffi-devel-3.0.13-18.el7.x86_64                           3/14
+  Verifying  : 1:tcl-8.5.13-8.el7.x86_64                                   4/14
+  Verifying  : tkinter-2.7.5-58.el7.x86_64                                 5/14
+  Verifying  : python2-pip-8.1.2-5.el7.noarch                              6/14
+  Verifying  : zip-3.0-11.el7.x86_64                                       7/14
+  Verifying  : redhat-rpm-config-9.1.0-76.el7.centos.noarch                8/14
+  Verifying  : augeas-libs-1.4.0-2.el7_4.2.x86_64                          9/14
+  Verifying  : 1:tix-8.4.3-12.el7.x86_64                                  10/14
+  Verifying  : perl-srpm-macros-1-8.el7.noarch                            11/14
+  Verifying  : 1:tk-8.5.13-6.el7.x86_64                                   12/14
+  Verifying  : dwz-0.11-3.el7.x86_64                                      13/14
+  Verifying  : python-tools-2.7.5-58.el7.x86_64                           14/14
+
+Installed:
+  augeas-libs.x86_64 0:1.4.0-2.el7_4.2
+  libffi-devel.x86_64 0:3.0.13-18.el7
+  python-devel.x86_64 0:2.7.5-58.el7
+  python-tools.x86_64 0:2.7.5-58.el7
+  python-virtualenv.noarch 0:1.10.1-4.el7
+  python2-pip.noarch 0:8.1.2-5.el7
+  redhat-rpm-config.noarch 0:9.1.0-76.el7.centos
+
+Dependency Installed:
+  dwz.x86_64 0:0.11-3.el7            perl-srpm-macros.noarch 0:1-8.el7
+  tcl.x86_64 1:8.5.13-8.el7          tix.x86_64 1:8.4.3-12.el7
+  tk.x86_64 1:8.5.13-6.el7           tkinter.x86_64 0:2.7.5-58.el7
+  zip.x86_64 0:3.0-11.el7
+
+Complete!
+Creating virtual environment...
+Installing Python packages...
+Installation succeeded.
+IMPORTANT NOTES:
+ - Your account credentials have been saved in your Certbot
+   configuration directory at /etc/letsencrypt. You should make a
+   secure backup of this folder now. This configuration directory will
+   also contain certificates and private keys obtained by Certbot so
+   making regular backups of this folder is ideal.
+
+Starting Nginx Service...
+
+
+If you need understand the Nginx configurations please go to:
+  http://nginx.org/en/docs/
+If you need replace the certificate file plese read first:
+  http://nginx.org/en/docs/http/configuring_https_servers.html
+
+
+Disabling SELinux...
+
+SELinux status:                 enabled
+SELinuxfs mount:                /sys/fs/selinux
+SELinux root directory:         /etc/selinux
+Loaded policy name:             targeted
+Current mode:                   permissive
+Mode from config file:          disabled
+Policy MLS status:              enabled
+Policy deny_unknown status:     allowed
+Max kernel policy version:      28
+
+Setting Firewall...
+Take Firewall RC...
+
+rpm -qa | grep firewalld
+
+service firewalld status
+Redirecting to /bin/systemctl status firewalld.service
+Unit firewalld.service could not be found.
+...firewalld is not installed on the system
+
+Checking Firewall RC...
+Redirecting to /bin/systemctl status iptables.service
+Unit iptables.service could not be found.
+...iptables service is not installed on the system
+
+Please check and configure you firewall...
+In order to Guacamole work properly open the ports tcp 80, 443, 8080 and 8443.
+
+Finished Successfully
+
+
+You can check the log file /root/guacamole-0.9.14.03-18-Apr.log
+
+
+Your firewall backup file /root/guacamole-0.9.14.03-18-Apr.firewall.bkp
+
+
+To manage the Guacamole GW via proxy go to http://<IP>/guacamole/ or https://<IP>/guacamole/
+
+
+To manage the Guacamole GW go to http://<IP>:8080/guacamole/ or https://<IP>:8443/guacamole/
+
+
+The username and password is: guacadmin
+
+
+If you have any suggestions please write to: correo@nacimientohernan.com.ar
