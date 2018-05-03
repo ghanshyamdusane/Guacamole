@@ -38,7 +38,7 @@ MariaDB [guadb]> select * from guacamole_connection_parameter;
 +---------------+----------------+-----------------+
 |             2 | hostname       | 13.127.184.236  |
 |             2 | ignore-cert    | true            |
-|             2 | password       | Pass@1234567    |
+|             2 | password       |                 |
 |             2 | port           | 3389            |
 |             2 | security       | any             |
 |             2 | username       | Administrator   |
