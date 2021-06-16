@@ -1,7 +1,7 @@
 #!/bin/env bash
 ##############################################################
 # This script is modified by Ghanshyam Dusane.
-# Task of this script:
+# Task of this script
 #  Install Packages Dependencies
 #  Download Guacamole and MySQL Connector packages
 #  Install Guacamole Server
